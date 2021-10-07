@@ -49,7 +49,7 @@ from libutils.rpi_utils import getCPUtemperature,getmac
 #
 # Global Variables
 #
-MQTT_SERVER="<change me!>"
+MQTT_SERVER="192.168.0.210"
 MQTT_PORT=1883
 # Full MQTT_topic = MQTT_BASE + MQTT_TYPE
 MQTT_BASE_TOPIC = "1R1/014"
