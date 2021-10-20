@@ -65,8 +65,8 @@ MQTT_SUB = MQTT_PUB
 MQTT_QOS=0 # (default) no ACK from server
 #MQTT_QOS=1 # server will ack every message
 
-MQTT_USER=""
-MQTT_PASSWD=""
+MQTT_USER="123456"
+MQTT_PASSWD="123456"
 
 # Measurement related
 # seconds between each measure.
@@ -200,6 +200,7 @@ def main():
 
     # MQTT setup
     client = mqtt.Client( clean_session=True, userdata=None )
+    client.username_pw_set(username="123456",password="123456")
     client.on_connect = on_connect
     client.on_message = on_message
     client.on_publish = on_publish
